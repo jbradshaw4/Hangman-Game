@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Musical Hangman</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/reset.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- My Style CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            
+            <div class="navbar-header">
+
+                <a class="navbar-brand" href="index.html">Musical Hangman</a>
+            </div>
+            
+           
+        </div>
+        
+    </nav>
+       <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('../assets/images/TheKillers.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Please Make it Stop...</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('../assets/images/Twenty_One_Pilots.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>The Only Way to Make it Stop...</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('../assets/images/mattkim.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Is To Win!!!</h2>
+                    <h3 class="Orlose">Or Lose!!!</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+    
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                        <h1 class="page-header">Please make it stop- Musical Hangman</h1>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-check"></i> Hangman Rules</h4>
+                    </div>
+
+                        <div class="panel-body">
+                             <p>Press any key to begin.  A song will begin to play. Hopefully you like it because it will not stop playing until you can figure out the name of the song.  Choose any letter from the keyboard to determine if its part of the name.  You have a limited number of guesses so make them count.</p>
+                      
+                        </div>
+                 </div>
+            
+            <div class="col-lg-12">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-gift"></i> Songs to Guess</h4>
+                    </div>
+                </div>
+
+                    <div class="panel-body">
+                        <h2 id="guessWord">_ _ _</h2>
+                    </div>
+                    
+                <div class="panel panel-default">
+
+                    <div class="panel-body">    
+                        Wrong Guess: <span id="wrongLetter"></span>
+                    </div>   
+                </div>    
+                    
+                <div class="panel panel-default">   
+
+                    <div class="panel-body">
+                        Guesses Left: <span id="numGuess">9</span>
+                    </div>
+                </div>    
+
+                <div class="panel panel-default">    
+                    
+                    <div class="panel-body">
+                        Wins: <span id="winCounter">1</span>
+                    </div> 
+                </div>
+                         
+                <div class="panel panel-default">  
+
+                    <div class="panel-body">
+                        Losses: <span id="lossCounter">9</span>
+                    </div>
+                </div>
+                        
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <audio id="myAudio">
+ 	 	<source src="../assets/Hangman-barbiegirl.mp3" type="audio/mpeg">
+  	</audio>
+
+
+	<audio id="myAudio1">
+ 	 	<source src="../assets/Hangman-mmmbop.mp3" type="audio/mpeg">
+  	</audio>
+
+
+  	<audio id="myAudio2">
+ 	 	<source src="../assets/Hangman-eatit.mp3" type="audio/mpeg">
+  	</audio>
+
+
+
+
+        <!-- Footer 
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Jake Bradshaw 2017</p>
+                </div>
+            </div>
+        </footer>-->
+
+    
+
+    <!-- My Games JavaScript File -->
+   <script src="../assets/game.js"></script> 
+
+  
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>

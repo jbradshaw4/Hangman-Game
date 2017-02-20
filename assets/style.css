@@ -1,0 +1,21 @@
+.navbar-brand{
+	text-align: center;
+	color: #ffffff;
+}
+
+footer {
+	text-align: center;
+	background-color: #777777;
+	padding: 15px;
+}
+.Orlose{
+	-webkit-animation: fadi 5s 1;
+}
+@-webkit-keyframes fadi {
+		0%  {opacity: 0;}
+		100%{opacity: 1;}
+}
+@-moz-keyframes fadi {
+		0%	{opacity: 0;}
+	  100%	{opacity: 1;}
+}
